@@ -2,21 +2,49 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>jQuery Template</title>
+    <title>Campaign Poster</title>
     
     <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous"></script>
-  
-    <script>
+  crossorigin="anonymous">
+      
+    
       $(function(){
+          var name = $('h1').html(); 
+          $('h3').html("Vote" + name  + " for " + position
           
+          
+          
+          
+          $("button").click(function(){
+          var name = $('h1').html(); 
+          $('h3').html(" " + name);
+          
+    
+      });
       });
       
   </script>
   </head>
-  <body>
+  <body style="background-color:CornflowerBlue">
+    
+   <center><h1>Welcome to the Campaign Poster Generator</h1>
+   <h2>Big dreams start here</h2>
+   </center>
   
+ 
+    Name: <input id="name_val" type="text" name="user"><br><br>
+    Political Party: <input id="party" type="text" name="party"><br><br>
+    Campaign Slogan: <input  id="slogan" type="text" name="party"><br><br>
+  
+ <button>Generate</button>
+  <br>
+  <br>
+  <h3></h3>
+
+<center> <p style="color:blue" position="top:390px"> VOTE</p> </center>
+ <center><img src="blank-camp.jpg" alt="Poster" width="500" height="400"></center>
+ 
   </body>
 </html>
